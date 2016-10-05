@@ -1,0 +1,3 @@
+Date of Birth (MM/DD/YYYY): 
+ <input type="text" class="datepicker minimumSize" name="BirthDate" id="lastReporteddate"/>
+<input type="submit" id="button">
