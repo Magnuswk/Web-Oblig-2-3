@@ -1,0 +1,21 @@
+<?xml version="1.0"	encoding="UTF-8"	?>
+<rss version="2.0">
+<channel>
+<title>Super	spennende nettside</title>
+<link>http://www.kulnettside.no</link>
+<description>Super	spennende nettside om	alt	mulig rart som du	bare	vil få med	deg.	</description>
+<language>no</language>
+<pubDate>Mon,	03	Oct	2016	12:00:00	GMT</pubDate>	
+<lastBuildDate>Mon,	03	Oct	2016	15:49:13	GMT</lastBuildDate>	
+<item>
+<title>Nyhet om	noe rart</title>
+<link>http://www.kulnettside.no/noerart</link>
+<description>En nyhet om	noe super	rart og spennende</description>
+</item>
+<item>
+<title>Nyhet om	noe kult</title>
+<link>http://www.kulnettside.no/noekult</link>
+<description>New	XML	tutorial	on	W3Schools</description>
+</item>
+</channel>
+</rss>
