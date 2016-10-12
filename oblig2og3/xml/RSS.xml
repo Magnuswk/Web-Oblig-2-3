@@ -1,0 +1,21 @@
+ <?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Student Stopp</title>
+  <link>http://www.it-stud.hiof.no/mortenok/wuobli3/studentstopp/</link>
+  <description>Nyhetesfeed fra Student Stopp</description>
+  <language>no</language>
+  <pubDate>Mon,12 Oct 2016 12:00 GMT</pubDate>
+  <item>
+    <title>Siste nytt fra Student Stopp</title>
+    <link>http://www.it-stud.hiof.no/mortenok/wuoblig3/studentstopp/</link>
+    <description>Her finner du de siste hendelsene på Student Stop</description>
+  </item>
+  <item>
+    <title>Nyhet om samkjøring fra HIØ</title>
+    <link>http://www.hiof.no</link>
+    <description>Nyheter om samkjøring fra HiØ.</description>
+  </item>
+</channel>
+</rss> 
