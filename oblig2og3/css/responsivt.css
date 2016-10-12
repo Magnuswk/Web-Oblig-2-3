@@ -1,1 +1,39 @@
 
+
+
+
+/* Dette er disegn for tablets med størelse 76px og oppover */
+@media (min-width: 768px) {
+  
+
+
+
+
+
+
+
+}
+/* Detter er disegn for "desktop" med størelse 992px og oppover */
+@media (min-width: 992px) {
+  
+  
+  
+  
+  
+  
+  
+  
+}
+/* Detter er disegn for de største skjermenne */
+@media (min-width: 1200px) {
+  
+  
+  
+  
+  
+  
+  
+}
+
+
+
