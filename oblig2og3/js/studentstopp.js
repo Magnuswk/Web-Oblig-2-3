@@ -33,11 +33,6 @@
         else if (passord !== bekreft) { // Bekreft passord ikke lik passordet, print dette...
           svar = "Passord samsvarer ikke"; // Osv...
         }
-        else if (alder === "") {
-          svar = "Fyll ut alder";
-        }
-        else if (alder < 18)
-          svar = "Du er ikke gammel nok!" // Om aldere som er tastet inn, er minder en 18, print...
         else {
           svar = "Takk for registrering";
         }
