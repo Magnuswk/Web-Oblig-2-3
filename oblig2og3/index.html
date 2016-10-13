@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student_Stopp</title>
-    <meta charset="utf-8">
-    <link href="css/responsivt.css" rel="stylesheet" type="text/css">       <!-- Design -->
+    <title>Student Stopp</title>
+    <meta charset="UTF-8">
+    <link href="studentStoppStyle.css" rel="stylesheet" type="text/css">       <!-- Design -->
     <link href="css/print.css" rel="stylesheet" type="text/css">            <!-- Print ark -->
     <link href="js/studentstopp.js" rel="stylesheet" type="text/css">       <!-- Programeringen til "registrering -->
     <link href="rss.xml" type="application/rss+xml" rel="alternate" title="rss" />  <!--RSS feed -->
 </head>
 <body>
-    <header class="topp">
-        <img src= "logo"/>
+	<header class="navigasjonsmeny">
+        <img src="studentstopp.jpg" alt="Logoen til Student Stopp" class="logo"/>
         <nav>
             <ul>
-                <li><a href="html/registrering.html">Registrer</a></li>
-                <li><a href="html/omoss.html">Om oss</a></li>
+                <li class="liNavigasjon">Om Student Stopp</li>
+                <li class="liNavigasjon">Logg inn/Registrer deg</li>
             </ul>
         </nav>
     </header>
     <main>
-        <article class="skjema">
-            <input id="date" type="date" placeholder="Dato" /><br />     <!-- skal vi her velge å få frem en datoboks --> 
-            <input id="klokke" type="??" placeholder="Klokke" /> <br />      <!-- skal vi her velge å få frem klokka --> 
-            <select id="fra">
-                <option value="remmen">HIØ Remmen</option>
-                <option value="krokeroy">HIØ Kråkerøy</option>
-                <option value="halden">Halden</option>
-                <option value="sarpsborg">Sarpborg</option>
-                <option value="fredrikstad">Fredrikstad</option>
-            </select>
-            <select id="til">
-                <option value="remmen">HIØ Remmen</option>
-                <option value="krokeroy">HIØ Kråkerøy</option>
-                <option value="halden">Halden</option>
-                <option value="sarpsborg">Sarpborg</option>
-                <option value="fredrikstad">Fredrikstad</option>
-            </select><br />
-            <input id="antall" type="number" placeholder="Antall"/>
-            <input id="stk" type="number" placeholder="Stk"/><br />
-            <button id="sok" type="button">SØK</button>  
-         </article>
-        <main class="background"> 
-        </main>
+    	<!-- VIKTIG! ikkje ta vekk &nbsp; i linja under! Den trengs for å skilje margin i class "mainBakgrunnsbilete" og "mainSkjema". -->
+    	<!-- Lat det ovanfor stå intill videre, løysing #2 i css-ark; testing ser positivt ut -->
+    	<section class="mainBakgrunnsbilete">
+    		<button id="btnTilPassasjer" type="button">Finn tur</button>
+    		<button class="btnTilSjaafor" type="button">Lei ut tur</button>
+    		<article class="mainSkjema">
+    			<h1 class="mainSelectOverskrift">Finn reise!</h1>
+    			<section class="mainSection">
+		            <section class="mainSelectTekst">
+		            	<p>Dato:</p>
+		            	<p>Klokkeslett:</p>
+		            	<p>Frå:</p>
+		            	<p>Til:</p>
+		            	<p>Antall personer:</p>
+		            	<p class="mainSelectTekstP">???????????</p>
+		            </section>
+		            <section class="mainSelectVerdi">
+		                <input class="mainInput" type="date" placeholder="Dato" />     <!-- --skal vi her velge å få frem en datoboks --> 
+		                <input class="mainInput" type="time" placeholder="Klokke" />     <!--  <-- skal vi her velge å få frem klokka --> 
+		                <select class="mainSelectx2Verdi">
+		                    <option class="mainSelectOption" value="remmen">HIØ Remmen</option>
+		                    <option class="mainSelectOption" value="krokeroy">HIØ Kråkerøy</option>
+		                    <option class="mainSelectOption" value="halden">Halden</option>
+		                    <option class="mainSelectOption" value="sarpsborg">Sarpborg</option>
+		                    <option class="mainSelectOption" value="fredrikstad">Fredrikstad</option>
+		                </select>
+		                <select class="mainSelectx2Verdi">
+		                    <option class="mainSelectOption" value="remmen">HIØ Remmen</option>
+		                    <option class="mainSelectOption" value="krokeroy">HIØ Kråkerøy</option>
+		                    <option class="mainSelectOption" value="halden">Halden</option>
+		                    <option class="mainSelectOption" value="sarpsborg">Sarpborg</option>
+		                    <option class="mainSelectOption" value="fredrikstad">Fredrikstad</option>
+		                </select>
+		                <input class="mainInput" type="number" placeholder="Antall"/>
+		                <input class="mainInput" type="number" placeholder="Stk"/>  
+		                <img url="RSS"/> <!-- <--sett inn link-->
+		            </section>
+		        </section>
+	            <section class="mainSelectSok">
+	            	<button class="mainBtnSok" type="button">Søk</button>
+	            </section>
+            </article>
+    	</section>
+    </main>
     <footer>
          <img url="RSS"/> <!-- sett inn link til RSS logo -->
          <img url="Facebook"/> <!-- sett inn link til RSS logo -->
          <img url="Twitter"/> <!-- sett inn link til RSS logo -->
         <p class="forfatter"></p>
     </footer>
-    </main>
 </body>
 </html>
