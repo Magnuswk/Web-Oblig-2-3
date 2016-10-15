@@ -26,12 +26,7 @@
 		width:100vw;
 		height:93vh;
 		background-size:cover;
-		overflow:hidden; /* Løysing #2 på margin-kollaps problem... Ser positivt ut, men endeleg resultat vil vise; lat stå intil videre */
-		/* Bilete er for stort i breidden i forhold til høgden. Dette gjer at biletet ikkje blir skarpt.
-		background-size:cover; gjer at me får sjå deler av biletet men får fortsatt behalde skarpheita, men me får ikkje sjå heile bilete.
-		Koden under setter biletet til å bruke 100% av gjenverande plass.
-		background-size:100vw 93vh; 
-		(Bruke samma men mindre bilete på små skjermstørrelsar for å få det til å passe fint? Deler av biletet må kløppast)*/
+		overflow:hidden;
 	}
 	#btnTilPassasjer{
 		font-size:1em;
