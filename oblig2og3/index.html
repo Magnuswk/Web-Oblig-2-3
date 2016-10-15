@@ -3,10 +3,10 @@
 <head>
     <title>Student Stopp</title>
     <meta charset="UTF-8">
-    <link href="studentStoppStyle.css" rel="stylesheet" type="text/css">       <!-- Design -->
-    <link href="css/print.css" rel="stylesheet" type="text/css">            <!-- Print ark -->
-    <link href="js/studentstopp.js" rel="stylesheet" type="text/css">       <!-- Programeringen til "registrering -->
-    <link href="rss.xml" type="application/rss+xml" rel="alternate" title="rss" />  <!--RSS feed -->
+    <link href="studentStoppStyle2.css" rel="stylesheet" type="text/css">       <!-- Design -->
+   <!--  <link href="css/print.css" rel="stylesheet" type="text/css">             Print ark -->
+   <!--  <link href="js/studentstopp.js" rel="stylesheet" type="text/css">       Programeringen til "registrering -->
+   <!-- <link href="rss.xml" type="application/rss+xml" rel="alternate" title="rss" />  RSS feed -->
 </head>
 <body>
 	<header class="navigasjonsmeny">
@@ -25,37 +25,42 @@
     		<button id="btnTilPassasjer" type="button">Finn tur</button>
     		<button class="btnTilSjaafor" type="button">Lei ut tur</button>
     		<article class="mainSkjema">
-    			<h1 class="mainSelectOverskrift">Finn reise!</h1>
+    			<h1 class="mainSectionOverskrift">Finn reise!</h1>
     			<section class="mainSection">
-		            <section class="mainSelectTekst">
-		            	<p>Dato:</p>
-		            	<p>Klokkeslett:</p>
-		            	<p>Frå:</p>
-		            	<p>Til:</p>
-		            	<p class="mainSelectTekstP">Antall personer:</p>
+		            <section class="mainSectionSection">
+		            	<p class="mainP">Dato:</p>
+		            	<input class="mainTid" type="date" placeholder="Dato">   
 		            </section>
-		            <section class="mainSelectVerdi">
-		                <input class="mainInput" type="date" placeholder="Dato" />     <!-- --skal vi her velge å få frem en datoboks --> 
-		                <input class="mainInput" type="time" placeholder="Klokke" />     <!--  <-- skal vi her velge å få frem klokka --> 
-		                <select class="mainSelectx2Verdi">
+		            <section class="mainSectionSection">
+		            	<p class="mainP">Klokkeslett:</p>
+		            	<input class="mainTid" type="time" placeholder="Klokka">
+		            </section>
+		            <section class="mainSectionSection">
+		            	<p class="mainP">Frå:</p>
+		            	<select class="mainInput">
 		                    <option class="mainSelectOption" value="remmen">HIØ Remmen</option>
 		                    <option class="mainSelectOption" value="krokeroy">HIØ Kråkerøy</option>
 		                    <option class="mainSelectOption" value="halden">Halden</option>
 		                    <option class="mainSelectOption" value="sarpsborg">Sarpborg</option>
 		                    <option class="mainSelectOption" value="fredrikstad">Fredrikstad</option>
 		                </select>
-		                <select class="mainSelectx2Verdi">
+		            </section>
+		            <section class="mainSectionSection">
+		            	<p class="mainP">Til:</p>
+		            	<select class="mainInput">
 		                    <option class="mainSelectOption" value="remmen">HIØ Remmen</option>
 		                    <option class="mainSelectOption" value="krokeroy">HIØ Kråkerøy</option>
 		                    <option class="mainSelectOption" value="halden">Halden</option>
 		                    <option class="mainSelectOption" value="sarpsborg">Sarpborg</option>
 		                    <option class="mainSelectOption" value="fredrikstad">Fredrikstad</option>
 		                </select>
-		                <input class="mainInput" type="number" placeholder="Antall"/>
-		                <img url="RSS"/> <!-- <--sett inn link-->
+		            </section>
+		            <section class="mainSectionSection">
+		            	<p class="mainP">Antall personer:</p>
+		            	<input class="mainPersoner" type="number" placeholder="Antall"/
 		            </section>
 		        </section>
-	            <section class="mainSelectSok">
+	            <section class="mainSectiontSok">
 	            	<button class="mainBtnSok" type="button">Søk</button>
 	            </section>
             </article>
