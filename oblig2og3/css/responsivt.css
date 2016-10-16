@@ -1,4 +1,3 @@
-/* For mobil over 300px */
 @media(min-width:300px){
 	body{
 		height:100vh;
@@ -13,7 +12,6 @@
 		justify-content:flex-start;
 	}
 	.liNavigasjon{
-		/*font-size:2.4em;*/
 		display:inline-flex;
 		padding:5% 1em 0 0;
 	}
@@ -24,11 +22,11 @@
 	.mainBakgrunnsbilete{
 		background-image: url("boyzinthehood.jpg");
 		width:100vw;
-		height:93vh;
+		height:92vh;
 		background-size:cover;
 		overflow:hidden;
 	}
-	#btnTilPassasjer{
+	.btnTilPassasjer{
 		font-size:1em;
 		margin-left:5%;
 		margin-top:15%;
@@ -91,46 +89,56 @@
 		font-size:1em;
 	}
 }
-
-
-
-/* Dette er disegn for tablets med størelse 768px og oppover */
 @media (min-width: 768px) {
-  
-
-
-
-
-
-
 
 }
-/* Detter er disegn for "desktop" med størelse 992px og oppover */
-@media (min-width: 992px) {
-  
-  
-  
-  
-  
-  
-  
-  
+@media (min-width: 870px) {
+	 body{
+		overflow-x:hidden;
+	}
+	.aLiNavigasjon{
+		display:inline-flex;
+		padding:0 0 0 1em;
+		font-size:0.5em;
+	}
+	.liNavigasjon{
+		padding:0.1em;
+	}
+  	.ulNavigasjon{
+  	margin:0;
+  	padding:0;
+	}
+  	.logo{
+  	width:8%;
+  	}
+  	.btnTilPassasjer{
+		font-size:0.5em;
+		margin-left:5%;
+		margin-top:2%;
+		background-color:white;
+		-webkit-appearance:none;
+		-webkit-border-radius:0;
+	}
+	.btnTilSjaafor{
+		font-size:0.5em;
+		-webkit-appearance:none;
+		-webkit-border-radius:0;
+	}
+	.mainSkjema{
+		width:50%;
+		height:65%;
+		margin:0 5% 0 5%;
+		font-size:0.5em;
+	}
+	.mainSectionOverskrift{
+		font-size:1.5em;
+		padding:0.5em 0 0 0.5em;
+	}
+	.mainP, .mainTid, .mainInput, .mainPersoner, .mainBtnSok{
+		margin-top:0.3em;
+		padding:0;
+	}
+	.mainSelectOption{
+		font-size:1em;
+	}
 }
-/* Detter er disegn for de største skjermenne */
-@media (min-width: 1200px) {
-  
-  
-  
-  
-  
-  
-  
-}
-/* Print ark */
-@media print {
-  
-  
-}
-
-
-
