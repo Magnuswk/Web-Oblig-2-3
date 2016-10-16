@@ -3,18 +3,19 @@
 <head>
 	<title>Student Stopp</title>
     <meta charset="UTF-8">
-    <link href="studentStoppStyle2.css" rel="stylesheet" type="text/css">       <!-- Design -->
-    <link href="css/print.css" rel="stylesheet" type="text/css">             <!-- Print ark -->
-   	<link href="js/studentstopp.js" rel="stylesheet" type="text/css">       <!-- Programeringen til "registrering -->
+    <link href="css/studentstopp.css" rel="stylesheet" type="text/css">       <!-- Design -->
+    <link href="print.css" rel="stylesheet" type="text/css">             <!-- Print ark -->
+   	<script src="js/studentstopp.js"></script>       <!-- Programeringen til "registrering -->
    	<link href="rss.xml" type="application/rss+xml" rel="alternate" title="rss" />  <!-- RSS feed -->
 </head>
 <body>
 	<header class="navigasjonsmeny">
-        <img src="studentstopp.jpg" alt="Logoen til Student Stopp" class="logo"/>
+        <img src="bilder/studentstopp.jpg" alt="Logoen til Student Stopp" class="logo"/>
         <nav>
             <ul>
                 <li class="liNavigasjon"><a class="aLiNavigasjon" href="omstudentstopp.html">Om Student Stopp</a></li>
-                <li class="liNavigasjon"><a class="aLiNavigasjon" href="logginn.html">Logg inn/Registrer deg</a></li>
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="logginn.html">Logg inn</a></li>
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="registrer.html">Registrer</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +28,7 @@
     			<section class="mainSection">
 		            <section class="mainSectionSection">
 		            	<p class="mainP">Dato:</p>
-		            	<input class="mainTid" type="date" placeholder="Dato">   
+		            	<input class="mainTid" type="date" placeholder="Dato">
 		            </section>
 		            <section class="mainSectionSection">
 		            	<p class="mainP">Klokkeslett:</p>
@@ -65,38 +66,9 @@
     	</section>
     </main>
     <footer>
-        <svg id="svg1" xmls="http://www.w3.org/2000/svg" width="0" height="0">
-  		<img src="rssLogo.svg" width="64px" height="64px" onerror="this.src='rssBackupLogo.png'">
-	<svg id="svg2" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
- 		 <img src="twitterLogo.svg" width="64px" height="64px" onerror="this.src='twitterLogo2.png'">
-	</svg>
-	<svg id="svg3" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
-   		 <img src="facebookHomeLogo.svg" width="64" height="64" onerror="this.src='facebookBackupLogo.png'">
-	</svg><!--Twitter/facebook logo er til illustrering. Vi vil ha twitter/face sider på en "virkelig" versjon
-	av nettsiden vår --><br>
-	
-	<?xml version="1.0" encoding="UTF-8" ?>
-	<rss version="2.0">
-
-	<channel>
- 	 <title>Student Stopp</title>
- 	 	<link>http://www.it-stud.hiof.no/mortenok/wuobli3/studentstopp/</link>
- 	 	<description>Nyhetesfeed fra Student Stopp</description>
-  	 	<language>no</language>
- 		 <pubDate>Mon,12 Oct 2016 12:00 GMT</pubDate>
-  		 <item>
-         <title>Siste nytt fra Student Stopp</title>
-        	 <link>http://www.it-stud.hiof.no/mortenok/wuoblig3/studentstopp/</link>
-         	<description>Her finner du de siste hendelsene på Student Stop</description>
-         	</item>
-        	 <item>
-         <title>Nyhet om samkjøring fra HIØ</title>
-        	 <link>http://www.hiof.no</link>
-        	 <description>Nyheter om samkjøring fra HiØ.</description>
-        	 </item>
-         </channel>
-         </rss>
-
+         <img url="RSS"/> <!-- sett inn link til RSS logo -->
+         <img url="Facebook"/> <!-- sett inn link til RSS logo -->
+         <img url="Twitter"/> <!-- sett inn link til RSS logo -->
         <p class="forfatter"></p>
     </footer>
 </body>
