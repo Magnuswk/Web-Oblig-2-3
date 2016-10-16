@@ -1,9 +1,10 @@
-
-    window.onload = oppstart;
+window.onload = oppstart;
 
       function oppstart () {
 
         var reg = document.getElementById("btnReg").onclick = registrer;
+        // Lager Knapp for rgistrering + variabel
+        var logg = document.getElementById("btnLogg").onclick = logginn;
         // Lager Knapp for rgistrering + variabel
       }
 
@@ -11,7 +12,6 @@
         var bruker = document.getElementById("txtBrukerNavn").value; // Brukernavn
         var passord = document.getElementById("txtPassord").value; // Passord
         var bekreft = document.getElementById("txtBekreft").value; // Bekreft passord
-        var alder = document.getElementById("txtDato").value; // Alder
         var min = 5; // Dette er en variabel for mer en 5 "karakterer"
 
         var svar = ""; // Variabel for hva som printes ut
@@ -38,3 +38,27 @@
         }
         document.getElementById("print").innerHTML = svar; // Skrives ut i <p>
     }
+
+    /* ******************************************************************************************* */
+
+                          /* Kode for Logg inn sia */
+
+
+        function logginn() {
+          var bruker = document.getElementById("txtBruker").value; // Brukernavn
+          var passord = document.getElementById("txtPass").value; // Passord
+
+          var svar = ""; // Variabel for hva som printes ut
+
+
+            if (bruker === "") { // Hvis brukernavn boxen er tom, print dette "Fyll inn..."
+                svar = "Fyll inn brukernavn";
+            }
+            else if (passord === "") { // Hvis passords boxen er tom, print ....
+                      svar = "Fyll inn passord";
+            }
+            else {
+              svar = "Velkommen!";
+            }
+            document.getElementById("print").innerHTML = svar; // Skrives ut i <p>
+        }
