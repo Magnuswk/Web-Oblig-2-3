@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student_Stopp</title>
-    <meta charset="utf-8">
-    <link href="responsivt.css" rel="stylesheet" type="text/css"> <!-- Disegn -->
-    <link href="print.css" rel="stylesheet" type="text/css"> <!-- Print ark -->
-    <link href="studentstopp.js" rel="stylesheet" type="text/css"> <!-- programeringen til "registrering -->
+	<title>Student Stopp</title>
+    <meta charset="UTF-8">
+    <link href="css/studentstopp.css" rel="stylesheet" type="text/css">       <!-- Design -->
+    <link href="css/print.css" rel="stylesheet" type="text/css">             <!-- Print ark -->
+   	<script src="js/studentstopp.js"></script>       <!-- Programeringen til "registrering -->
+   	<link href="rss.xml" type="application/rss+xml" rel="alternate" title="rss" />  <!-- RSS feed -->
 </head>
-<body>
-    <header class="topp">
-        <img src= "logo"/>
+<body class="breg">
+	<header class="navigasjonsmeny">
+        <img src="bilder/studentstopp.jpg" alt="Logoen til Student Stopp" class="logo"/>
         <nav>
             <ul>
-                <li><a href="html/registrering.html">Registrer</a></li>
-                <li><a href="html/omstudentstopp.html">Om Student Stopp</a></li>
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="omstudentstopp.html">Om Student Stopp</a></li>
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="logginn.html">Logg inn</a></li>
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="registrer.html">Registrer</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <article class="registrering">
-          Brukernavn:
-            <input type="text" id="txtBrukerNavn" /> <!--Bruker navn box -->
-              <br /><br />
-          Passord:
-            <input type="password" id="txtPassord" /> <!-- Passord box -->
-              <br /><br />
-          Bekreft passord:
-            <input type="password" id="txtBekreft" /> <!-- Bekreft passord box -->
-              <br /><br />
-            <button type="button" id="btnReg">Registrering</button> <!-- Registrerings knapp -->
-            <p id="print">Fyll inn ønsket brukernavn, passord og alder</p> <!-- Utskrift -->
-         </article>
-        <main class="bacground">
-        </main>
+    <main class="reg">
+      <article class="registrering">
+            Brukernavn:
+              <input type="text" id="txtBrukerNavn" /> <!--Bruker navn box -->
+                <br /><br />
+            Passord:
+              <input type="password" id="txtPassord" /> <!-- Passord box -->
+                <br /><br />
+            Bekreft passord:
+              <input type="password" id="txtBekreft" /> <!-- Bekreft passord box -->
+                <br /><br />
+              <button type="button" id="btnReg">Registrering</button> <!-- Registrerings knapp -->
+              <p id="print">Fyll inn ønsket brukernavn, passord og alder</p> <!-- Utskrift -->
+           </article>
+    </main>
     <footer>
+         <img url="RSS"/> <!-- sett inn link til RSS logo -->
+         <img url="Facebook"/> <!-- sett inn link til RSS logo -->
+         <img url="Twitter"/> <!-- sett inn link til RSS logo -->
         <p class="forfatter"></p>
     </footer>
-    </main>
 </body>
 </html>
