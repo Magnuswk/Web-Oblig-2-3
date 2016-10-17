@@ -1,1 +1,185 @@
 
+@media(min-width:300px){
+	body{
+		height:100vh;
+		width:100vw;
+		margin:0;
+		font-size:2.4em;
+	}
+	.navigasjonsmeny{
+		display:inline-flex;
+		width:100%;
+		height:8vh;
+		justify-content:flex-start;
+	}
+	.liNavigasjon{
+		display:inline-flex;
+		padding:5% 1em 0 0;
+	}
+	.aLiNavigasjon{
+		text-decoration:none;
+		color:black;
+	}
+	.mainBakgrunnsbilete{
+		background-image: url("boyzinthehood.jpg");
+		width:100vw;
+		height:92vh;
+		background-size:cover;
+		overflow:hidden;
+	}
+	.btnTilPassasjer{
+		font-size:1em;
+		margin-left:5%;
+		margin-top:15%;
+		background-color:white;
+		-webkit-appearance:none;
+		-webkit-border-radius:0;
+	}
+	.btnTilSjaafor{
+		font-size:1em;
+		-webkit-appearance:none;
+		-webkit-border-radius:0;
+		background-color:grey;
+	}
+	.mainSkjema{
+		width:90%;
+		height:70%;
+		margin:0 5% 0 5%;
+		background-color:rgba(255, 255, 255, 0.9);
+	}
+	.mainSectionOverskrift{
+		margin:0;
+		padding:5% 0 0 5%;
+		width:100%;
+	}
+	.mainSectionSection{
+		display:flex;
+		justify-content:space-between;
+		margin:0 15% 0 5%;
+	}
+	.mainP{
+		margin:5% 0 5% 0;
+	}
+	.mainInput{
+		width:40%;
+		height:100%;
+		margin:5% 0 5% 0;
+		font-size:1em;
+	}
+	.mainTid{
+		font-size:1em;
+		margin:4% 0 4% 0;
+	}
+	.mainPersoner{
+		width:40%;
+		height:100%;
+		margin:4% 0 4% 0;
+		font-size:1em;
+	}
+	.mainSelectOption{
+		font-size:2em;
+	}
+	.mainSectionSok{
+		width:100%;
+	}
+	.mainBtnSok{
+		display:block;
+		width:90%;
+		height:90%;
+		margin:5% 5%;
+		font-size:1em;
+	}
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 870px) {
+	 body{
+		overflow-x:hidden;
+	}
+	.aLiNavigasjon{
+		display:inline-flex;
+		padding:0 0 0 1em;
+		font-size:0.5em;
+	}
+	.liNavigasjon{
+		padding:0.1em;
+	}
+  	.ulNavigasjon{
+  	margin:0;
+  	padding:0;
+	}
+  	.logo{
+  	width:8%;
+  	}
+  	.btnTilPassasjer{
+		font-size:0.5em;
+		margin-left:5%;
+		margin-top:2%;
+		background-color:white;
+		-webkit-appearance:none;
+		-webkit-border-radius:0;
+	}
+	.btnTilSjaafor{
+		font-size:0.5em;
+		-webkit-appearance:none;
+		-webkit-border-radius:0;
+	}
+	.mainSkjema{
+		width:50%;
+		height:65%;
+		margin:0 5% 0 5%;
+		font-size:0.5em;
+	}
+	.mainSectionOverskrift{
+		font-size:1.5em;
+		padding:0.5em 0 0 0.5em;
+	}
+	.mainP, .mainTid, .mainInput, .mainPersoner, .mainBtnSok{
+		margin-top:0.3em;
+		padding:0;
+	}
+	.mainSelectOption{
+		font-size:1em;
+	}
+}
+
+/* Registrerings sia */
+
+.reg {
+  border: solid;
+  width:90%;
+  height:75%;
+  margin:1% 6% 1% 6%;
+  background-color:rgba(255, 255, 255, 0.9);
+
+}
+
+.breg {
+  background-image: url("boyzinthehood.jpg");
+  background-repeat: no-repeat;
+  width:100vw;
+  height:92vh;
+  background-size: 30em 20em;
+  overflow:hidden;
+
+}
+
+/* Logg inn sia */
+
+.logg {
+  border: solid;
+  width:90%;
+  height:75%;
+  margin:1% 6% 1% 6%;
+  background-color:rgba(255, 255, 255, 0.9);
+}
+
+.blogg {
+  background-image: url("boyzinthehood.jpg");
+  background-repeat: no-repeat;
+  width:100vw;
+  height:92vh;
+  background-size: 30em 20em;
+  overflow:hidden;
+}
