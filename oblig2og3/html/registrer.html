@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrer deg</title>
+    <meta charset="UTF-8">
+    <link href="responsivt.css" rel="stylesheet" type="text/css"/>
+    <link href="print.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" type="image/png" href="studentstopp.png"/>
+    <script src="registrer.js"></script>
+</head>
+<body>
+  <header class="navigasjonsmeny">
+        <a class="aLogo" href="http://www.it-stud.hiof.no/~mortenok/wuoblig3/studentstopp/"><img src="studentstopp.png" alt="Logoen til Student Stopp" class="logo"/></a>
+        <nav>
+            <ul class="ulNavigasjon">
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="omstudentstopp.html">Om Student Stopp</a></li>
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="logginn.html">Logg inn</a></li>
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="registrer.html">Registrer deg</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="mainBakgrunnsbilete">
+        <a class="btnNavigasjon" href="index.html"><button class="btnTilPassasjer" type="button">Finn reise</button></a>
+        <a class="btnNavigasjon" href="leiuttur.html"><button class="btnTilSjaafor" type="button">Lei ut reise</button></a>
+        <article class="mainSkjemaRegistrer">
+          <h1 class="mainSectionOverskrift">Registrer deg</h1>
+          <section class="mainSectionLoggInn">
+              <p>Brukernavn:</p>
+              <input class="mainLoggInnBrukernavn" type="text" placeholder="Brukernavn" />
+              <p>Passord:</p>
+              <input class="mainLoggInnPassord1" type="password" placeholder="Passord" />
+              <p>Bekreft passord:</p>
+              <input class="mainLoggInnPassord2" type="password" placeholder="Passord" />
+              <button id="mainBtnRegistrer" type="button">Registrer deg</button>
+              <p class="txtTilbakemeldingRegistrering"></p>
+          </section>
+        </article>
+    </main>
+    </section>
+    <footer>
+      <svg class="footerSvg" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+        <img src="facebook.svg" width="64" height="64" onerror="this.src='facebookBackupLogo.png'">
+    </svg>
+    <svg class="footerSvg" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+        <img src="twitter.svg" width="64" height="64" onerror="this.src='twitterLogo2.png'">
+    </svg>
+    <svg class="footerSvg" xmls="http://www.w3.org/2000/svg" width="0" height="0">
+        <img src="rss.svg" width="64" height="64" onerror="this.src='rssBackupLogo.png'">
+    </svg>
+    </footer>
+</body>
+</html>
