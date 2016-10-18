@@ -3,81 +3,57 @@
 <head>
     <title>Om Student Stopp</title>
     <meta charset="UTF-8">
-    <link href="responsivt.css" rel="stylesheet" type="text/css">       <!-- Design -->
-    <link href="css/print.css" rel="stylesheet" type="text/css">            <!-- Print ark -->
-    <link href="js/studentstopp.js" rel="stylesheet" type="text/css">       <!-- Programeringen til "registrering -->
-    <link href="rss.xml" type="application/rss+xml" rel="alternate" title="rss" />  <!--RSS feed -->
-    <link href="rss.css" rel="stylesheet" type="text/css">
+    <link href="responsivt.css" rel="stylesheet" type="text/css"/>
+    <link href="print.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" type="image/png" href="studentstopp.png"/>
 </head>
 <body>
 	<header class="navigasjonsmeny">
-        <img src="studentstopp.jpg" alt="Logoen til Student Stopp" class="logo"/>
+        <a class="aLogo" href="http://www.it-stud.hiof.no/~mortenok/wuoblig3/studentstopp/"><img src="studentstopp.png" alt="Logoen til Student Stopp" class="logo"/></a>
         <nav>
-            <ul>
+            <ul class="ulNavigasjon">
                 <li class="liNavigasjon"><a class="aLiNavigasjon" href="omstudentstopp.html">Om Student Stopp</a></li>
-                <li class="liNavigasjon"><a class="aLiNavigasjon" href="logginn.html">Logg inn/Registrer deg</a></li>
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="logginn.html">Logg inn</a></li>
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="registrer.html">Registrer deg</a></li>
             </ul>
         </nav>
     </header>
     <main>
-    	<section>
-    		<h2>Om Student Stopp</h2><br />
-			
-			<p><blockquote>Student Stopp vant prisen for beste pitch og gjennomførbare ide under Innovasjoncamp holdt av <a href=http://www.ue.no/>Ungt Entrepenørskap</a> på IT avdelingen på <em>Høgskolen i Østfold</em> 23. - 24. august 2016. 
-			Prosjektet ble regnet for å være gjennomførbart, bæredyktig, miljøvennlig, sosialt og innvolverer mange på ganske kort tid. Vinnere blir sendt til <a href= https://www.atea.no/>Atea</a>
-			sin IT konferanse i Oslo i november.
-			</blockquote><br />
-			
-			Er du student ved <a href=http://www2.hiof.no/nor/hogskolen-i-ostfold/studiestart/parkering-halden&PHPSESSID=ink59jgl4414b267cvc4g2nur4>Høgskolen i Østfold</a> og pendler?
-			Da kan <em>Student Stopp</em> gjøre din hverdag enklere!! Mange studenter bruker lang tid på å pendle via kollektiv tranport, og avgangene er begrenset. Dette gjør at mange
-			velger å kjøre bil - med mange ledige plasser.</p>
-			
-			<h4>Det geniale med Student Stopp er at den gjør det enkelt for passager og sjåfør å finne hverandre!</h4>
-			
-			<p>Gå inn på Studet Stopp og registrer deg nå, og få vennene dine til å gjøre det samme. For jo flere som registrer seg som passager og som sjåfører,
-			jo større er muligheten for at nettopp du får en raskere og mer behaglig hverdag - med samkjøring. Dette gir deg også mulighet til å bli bedre kjent med de du studerer sammen med på tvers av fag.		
-			I starten har vi satset på samkjøring mellom byene Halden, Fredrikstad og Sarpsborg.
-			Registrer deg nå, og så får vi se hva fremtiden bringer:).
-			</p>
+    	<section class="mainBakgrunnsbilete">
+            <a class="btnNavigasjon" href="index.html"><button class="btnTilPassasjer" type="button">Finn reise</button></a>
+            <a class="btnNavigasjon" href="leiuttur.html"><button class="btnTilSjaafor" type="button">Lei ut reise</button></a>
+            <article class="mainSkjemaOmStudentStopp">
+                <h1 class="mainSectionOverskrift">Om Student Stopp</h1>
+                <p class="mainPInfo">
+                    Student Stopp vant prisen for beste pitch og gjennomførbare ide under Innovasjoncamp holdt av <a href=http://www.ue.no/>Ungt Entrepenørskap</a> på IT avdelingen på <em>Høgskolen i Østfold</em> 23. - 24. august 2016. 
+                    Prosjektet ble regnet for å være gjennomførbart, bæredyktig, miljøvennlig, sosialt og innvolverer mange på ganske kort tid. Vinnere blir sendt til <a href= https://www.atea.no/>Atea</a>
+                    sin IT konferanse i Oslo i november.
+                </p>
+                <p class="mainPInfo">
+                    Er du student ved <a href=http://www2.hiof.no/nor/hogskolen-i-ostfold/studiestart/parkering-halden&PHPSESSID=ink59jgl4414b267cvc4g2nur4>Høgskolen i Østfold</a> og pendler?
+                    Da kan <em>Student Stopp</em> gjøre din hverdag enklere! Mange studenter bruker lang tid på å pendle via kollektiv tranport, og avgangene er begrenset. Dette gjør at mange velger å kjøre bil - med mange ledige plasser.
+                </p>
+                <p class="mainPInfo"><strong>
+                    Det geniale med Student Stopp er at den gjør det enkelt for passager og sjåfør å finne hverandre!
+                </strong><p>
+                <p class="mainPInfo">
+                    Gå inn på Studet Stopp og registrer deg nå, og få vennene dine til å gjøre det samme. Jo flere som registrer seg, jo større er muligheten for at nettopp du får en raskere og mer behaglig hverdag - med samkjøring. Dette gir deg også mulighet til å bli bedre kjent med de du studerer sammen med på tvers av fag.     
+                    I starten har vi satset på samkjøring mellom byene Halden, Fredrikstad og Sarpsborg.
+                    Registrer deg nå, og så får vi se hva fremtiden bringer:).
+                </p>
+            </article>
     	</section>
     </main>
     <footer>
-        <svg id="svg1" xmls="http://www.w3.org/2000/svg" width="0" height="0">
- 	 <img src="rssLogo.svg" width="64px" height="64px" onerror="this.src='rssBackupLogo.png'">
-	</svg>
-	<svg id="svg2" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
-  	 <img src="twitterLogo.svg" width="64px" height="64px" onerror="this.src='twitterLogo2.png'">
-	</svg>
-	<!--Twitter logo er til illustrering. Vi vil ha twitter/face sider på en "virkelig" versjon
-	av nettsiden vår -->
-	<svg id="svg3" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
-    	 <img src="facebookHomeLogo.svg" width="64" height="64" onerror="this.src='facebookBackupLogo.png'">
-	</svg><br>
-	<?xml version="1.0" encoding="UTF-8" ?>
-
-	<rss version="2.0">
-
-	<channel>
-  	<item>
-  	<title>Student Stopp</title>
-  	<link>http://www.it-stud.hiof.no/mortenok/wuobli3/studentstopp/</link>
-  	<description>Nyhetsfeed fra Student Stopp</description>
-  	<language>no</language>
-  	<pubDate>Mon,12 Oct 2016 12:00 GMT</pubDate>
-  	</item>
-  	<item>
-  	<title>Siste nytt fra Student Stopp</title>
-  	<link>http://www.it-stud.hiof.no/mortenok/wuoblig3/studentstopp/</link>
-  	<description>Her finner du de siste hendelsene på Student Stop</description>
-  	</item>
-  	<item>
-  	<title>Nyhet om samkjøring fra HIØ</title>
-  	<link>http://www.hiof.no</link>
-  	<description>Nyheter om samkjøring fra HiØ.</description>
-  	</item>
-	</channel>
-	</rss>
-        <p class="forfatter"></p>
+        <svg class="footerSvg" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+            <img src="facebook.svg" width="64" height="64" onerror="this.src='facebookBackupLogo.png'">
+        </svg>
+        <svg class="footerSvg" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+            <img src="twitter.svg" width="64" height="64" onerror="this.src='twitterLogo2.png'">
+        </svg>
+        <svg class="footerSvg" xmls="http://www.w3.org/2000/svg" width="0" height="0">
+            <img src="rss.svg" width="64" height="64" onerror="this.src='rssBackupLogo.png'">
+        </svg>
     </footer>
 </body>
 </html>
