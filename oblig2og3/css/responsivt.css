@@ -3,11 +3,15 @@
 		height:100vh;
 		width:100vw;
 		margin:0;
+		padding:0;
 		font-size:2.4em;
+	}
+	a{
+		text-decoration:none;
 	}
 	.navigasjonsmeny{
 		display:inline-flex;
-		width:100%;
+		width:100vw;
 		height:8vh;
 		justify-content:flex-start;
 	}
@@ -37,13 +41,32 @@
 	}
 	.btnTilSjaafor{
 		font-size:1em;
+		background-color:white;
 		-webkit-appearance:none;
 		-webkit-border-radius:0;
-		background-color:grey;
 	}
 	.mainSkjema{
 		width:90%;
-		height:70%; /*70*/
+		height:70%;
+		margin:0 5% 0 5%;
+		background-color:rgba(255, 255, 255, 0.9);
+	}
+	.mainSkjemaOmStudentStopp{
+		width:90%;
+		height:100vh;
+		margin:0 5% 0 5%;
+		background-color:rgba(255, 255, 255, 0.9);
+		overflow-y:scroll;
+	}
+	.mainSkjemaLoggInn{
+		width:60%;
+		height:50%;
+		margin:0 5% 0 5%;
+		background-color:rgba(255, 255, 255, 0.9);
+	}
+	.mainSkjemaRegistrer{
+		width:55%;
+		height:70%;
 		margin:0 5% 0 5%;
 		background-color:rgba(255, 255, 255, 0.9);
 	}
@@ -59,6 +82,12 @@
 	}
 	.mainP{
 		margin:5% 0 5% 0;
+	}
+	.mainPInfo{
+		padding-left:1em;
+	}
+	.mainPResultat{
+		margin-left:1em;
 	}
 	.mainInput{
 		width:40%;
@@ -76,18 +105,81 @@
 		margin:4% 0 4% 0;
 		font-size:1em;
 	}
+	.mainLoggInn, .mainLoggInnBrukernavn, .mainLoggInnPassord1, .mainLoggInnPassord2{
+		width:50%;
+		height:10%;
+		margin:4% 0 4% 0;
+		font-size:0.8em;
+		margin:0;
+	}
 	.mainSelectOption{
 		font-size:2em;
 	}
 	.mainSectionSok{
 		width:100%;
 	}
-	.mainBtnSok{
+	.mainSectionLoggInn{
+		margin-left:1em;
+		width:90%;
+		height:50%;
+	}
+	.mainBtn{
 		display:block;
 		width:90%;
 		height:90%;
 		margin:5% 5%;
 		font-size:1em;
+	}
+	.mainBtnLoggInn{
+		display:block;
+		width:50%;
+		height:15%;
+		margin:1em 0 0 1em;
+		font-size:1em;
+		-webkit-appearance:none;
+		-webkit-border-radius:0;
+	}
+	#mainBtnRegistrer{
+		display:block;
+		width:70%;
+		height:15%;
+		margin:1em 0 0 1em;
+		font-size:1em;
+		-webkit-appearance:none;
+		-webkit-border-radius:0;
+	}
+	.sectionRss{
+		height:50vh;
+		width:100vw;
+	}
+	.rssfeed{
+		display: block;
+		font-family: verdana, arial;
+	}
+	.rssTitle{
+		display:block;
+		color:gray;
+		border-bottom:1px solid silver;
+	}
+	.rssItem{
+		display:block;
+		padding:0.5em 0 0.5em 0.5em;
+	}
+	.rssPubDate, .rssDes{
+		display:block;
+	}
+	.sectionRss{
+		font-size:0.8em;
+	}
+	footer{
+		height:2em;
+		margin-top:1em;
+	}
+	.footerSvg{
+		margin-right:5em;
+	}
+	.txtTilbakemeldingLoggInn, .txtTilbakemeldingRegistrering{
+		color:red;
 	}
 }
 @media (min-width: 700px) {
@@ -110,11 +202,16 @@
 		padding:0.1em;
 	}
   	.ulNavigasjon{
-  	margin:0;
-  	padding:0;
+  		margin:0;
+  		padding:0;
 	}
   	.logo{
-  	width:8%;
+  		width:10%;
+  		height:8%;
+  		position:absolute;
+  	}
+  	.aLogo{
+  		width:10%;
   	}
   	.btnTilPassasjer{
 		font-size:0.5em;
@@ -135,15 +232,45 @@
 		margin:0 5% 0 5%;
 		font-size:0.5em;
 	}
+	.mainSkjemaOmStudentStopp{
+		width:70%;
+		height:80%;
+		margin:0 5% 0 5%;
+		font-size:0.5em;
+		overflow-x:hidden;
+	}
+	.mainSkjemaLoggInn{
+		width:40%;
+		height:55%;
+		margin:0 5% 0 5%;
+		background-color:rgba(255, 255, 255, 0.9);
+		font-size:0.5em;
+	}
+	.mainSkjemaRegistrer{
+		width:50%;
+		height:70;
+		margin:0 5% 0 5%;
+		font-size:0.5em;
+	}
 	.mainSectionOverskrift{
 		font-size:1.5em;
 		padding:0.5em 0 0 0.5em;
 	}
-	.mainP, .mainTid, .mainInput, .mainPersoner, .mainBtnSok{
+	.mainP, .mainTid, .mainInput, .mainPersoner, .mainBtn{
 		margin-top:0.3em;
 		padding:0;
 	}
 	.mainSelectOption{
 		font-size:1em;
+	}
+	.sectionRss{
+		margin-top:1em;
+		height:45vh;
+		width:100vw;
+		font-size:0.4em;
+	}
+	.footerSvg{
+		margin:0;
+		padding-right:1em;
 	}
 }
