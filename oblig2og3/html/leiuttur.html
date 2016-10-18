@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Stopp</title>
+    <meta charset="UTF-8">
+    <link href="responsivt.css" rel="stylesheet" type="text/css"/>
+    <link href="print.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" type="image/png" href="studentstopp.png"/>
+</head>
+<body>
+	<header class="navigasjonsmeny">
+        <a class="aLogo" href="http://www.it-stud.hiof.no/~mortenok/wuoblig3/studentstopp/"><img src="studentstopp.png" alt="Logoen til Student Stopp" class="logo"/></a>
+        <nav>
+            <ul class="ulNavigasjon">
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="omstudentstopp.html">Om Student Stopp</a></li>
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="logginn.html">Logg inn</a></li>
+                <li class="liNavigasjon"><a class="aLiNavigasjon" href="registrer.html">Registrer deg</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    	<section class="mainBakgrunnsbilete">
+    		<a class="btnNavigasjon" href="index.html"><button class="btnTilPassasjer" type="button">Finn reise</button></a>
+    		<a class="btnNavigasjon" href="leiuttur.html"><button class="btnTilSjaafor" type="button">Lei ut reise</button></a>
+    		<article class="mainSkjema">
+    			<h1 class="mainSectionOverskrift">Lei ut reise</h1>
+    			<section class="mainSection">
+		            <section class="mainSectionSection">
+		            	<p class="mainP">Dato:</p>
+		            	<input class="mainTid" type="date" placeholder="Dato">   
+		            </section>
+		            <section class="mainSectionSection">
+		            	<p class="mainP">Klokkeslett:</p>
+		            	<input class="mainTid" type="time" placeholder="Klokka">
+		            </section>
+		            <section class="mainSectionSection">
+		            	<p class="mainP">Frå:</p>
+		            	<select class="mainInput">
+		                    <option class="mainSelectOption" value="remmen">HIØ Remmen</option>
+		                    <option class="mainSelectOption" value="krokeroy">HIØ Kråkerøy</option>
+		                    <option class="mainSelectOption" value="halden">Halden</option>
+		                    <option class="mainSelectOption" value="sarpsborg">Sarpborg</option>
+		                    <option class="mainSelectOption" value="fredrikstad">Fredrikstad</option>
+		                </select>
+		            </section>
+		            <section class="mainSectionSection">
+		            	<p class="mainP">Til:</p>
+		            	<select class="mainInput">
+		                    <option class="mainSelectOption" value="remmen">HIØ Remmen</option>
+		                    <option class="mainSelectOption" value="krokeroy">HIØ Kråkerøy</option>
+		                    <option class="mainSelectOption" value="halden">Halden</option>
+		                    <option class="mainSelectOption" value="sarpsborg">Sarpborg</option>
+		                    <option class="mainSelectOption" value="fredrikstad">Fredrikstad</option>
+		                </select>
+		            </section>
+		            <section class="mainSectionSection">
+		            	<p class="mainP">Plass til:</p>
+		            	<input class="mainPersoner" type="number" placeholder="Antall"/>
+		            </section>
+		        </section>
+	            <section class="mainSectiontSok">
+	            	<a class="btnNavigasjon" href="leiuttrresultat.html"><button class="mainBtn" type="button">Publiser</button></a>
+	            </section>
+            </article>
+    	</section>
+    </main>
+    <section class="sectionRss">
+		<?xml version="1.0" encoding="UTF-8" ?>
+		<rss version="2.0" class="rssfeed">
+			<channel>
+				<item class="rssItem">
+					<title class="rssTitle">Student Stopp</title>
+					<link class="rssLink">http://www.it-stud.hiof.no/~mortenok/wuoblig3/studentstopp/</link>
+					<description class="rssDes">Nyhetsfeed fra studentstopp.no</description>
+					<pubDate class="rssPubDate">Mon,12 Oct 2016 12:00 GMT</pubDate>
+				</item>
+				<item class="rssItem">
+					<title class="rssTitle">Siste nytt fra Student Stopp</title>
+					<link class="rssLink">http://www.it-stud.hiof.no/~mortenok/wuoblig3/studentstopp/</link>
+					<description class="rssDes">Her finner du de siste hendelsene på Student Stopp.</description>
+					<pubDate class="rssPubDate">Mon,12 Oct 2016 12:00 GMT</pubDate>
+				</item>
+				<item class="rssItem">
+					<title class="rssTitle">Nyhet om samkjøring fra HIØ</title>
+					<link class="rssLink">http://www.it-stud.hiof.no/~mortenok/wuoblig3/studentstopp/</link>
+					<description class="rssDes">Nyheter om samkjøring fra HiØ.</description>
+					<pubDate class="rssPubDate">Mon,12 Oct 2016 12:00 GMT</pubDate>
+				</item>
+			</channel>
+		</rss>
+    </section>
+    <footer>
+   		<svg class="footerSvg" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+    		<img src="facebook.svg" width="64" height="64" onerror="this.src='facebookBackupLogo.png'">
+		</svg>
+		<svg class="footerSvg" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+    		<img src="twitter.svg" width="64" height="64" onerror="this.src='twitterLogo2.png'">
+		</svg>
+		<svg class="footerSvg" xmls="http://www.w3.org/2000/svg" width="0" height="0">
+    		<img src="rss.svg" width="64" height="64" onerror="this.src='rssBackupLogo.png'">
+		</svg>
+    </footer>
+</body>
+</html>
