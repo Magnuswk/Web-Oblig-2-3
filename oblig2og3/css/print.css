@@ -1,1 +1,10 @@
-
+@media print{
+	*{
+		font-size:0.9em;
+		color:black;
+		overflow:hidden;
+	}
+	.navigasjonsmeny, .btnTilPassasjer, .btnTilSjaafor, footer, .mainBtn, .sectionRss, .mainBtnLoggInn{
+		display:none;
+	}
+}
